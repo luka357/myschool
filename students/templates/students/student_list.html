@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სტუდენტების სია</title>
+</head>
+<body>
+    <h1>სტუდენტების სია</h1>
+
+    {% for student in students %}
+        <div>
+            <h3><a href="/students/{{ student.pk }}/">{{ student.name }}</a></h3>
+            <p>ასაკი: {{ student.age }}</p>
+            <p>email: {{ student.email }}</p>
+            <p>ქულა: {{ student.grade }}</p>
+        </div>
+        <hr>
+    {% endfor %}
+</body>
+</html>

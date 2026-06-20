@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კურსების სია</title>
+</head>
+<body>
+    <h1>კურსების სია</h1>
+
+    {% for course in courses %}
+        <div>
+            <h3><a href="/courses/{{ course.pk }}/">{{ course.name }}</a></h3>
+            <p>{{ course.desc }}</p>
+        </div>
+        <hr>
+    {% endfor %}
+</body>
+</html>

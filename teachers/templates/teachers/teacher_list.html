@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მასწავლებლების სია</title>
+</head>
+<body>
+    <h1>მასწავლებლების სია</h1>
+
+    {% for teacher in teachers %}
+        <div>
+            <h3><a href="/teachers/{{ teacher.pk }}/">{{ teacher.name }}</a></h3>
+            <p>email: {{ teacher.email }}</p>
+            <p>საგანი: {{ teacher.subject }}</p>
+        </div>
+        <hr>
+    {% endfor %}
+</body>
+</html>
