@@ -8,3 +8,4 @@ def teacher_list(request):
 def teacher_detail(request, pk):
     teacher = Teacher.objects.get(pk=pk)
     return render(request, 'teachers/teacher_detail.html', {'teacher': teacher})
+

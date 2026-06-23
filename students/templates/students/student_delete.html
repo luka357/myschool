@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სტუდენტების წაშლა</title>
+</head>
+<body>
+    <h1>დარწმუნებული ხარ?</h1>
+    <p>გინდა წაშალო: <strong>{{ student.name }}</strong>?</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">დიახ, წაშლა</button>
+    </form>
+
+    <a href="/students/">← გაუქმება</a>
+</body>
+</html>

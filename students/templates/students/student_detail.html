@@ -12,6 +12,12 @@
     <p>აღწერა: {{ student.desc }}</p>
     <p>ქულა: {{ student.grade }}</p>
 
+    <a href="/students/{{ student.pk }}/delete/">🗑️ წაშლა</a>
+    <br>
+    <hr>
+    <a href="/students/{{ student.pk }}/update/">✏️ რედაქტირება</a>
+    <br>
+    <hr>
     <a href="/students/">← უკან სიაში</a>
 </body>
 </html>
