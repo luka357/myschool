@@ -10,5 +10,15 @@
     <p>აღწერა: {{ course.desc }}</p>  
 
     <a href="/courses/">← უკან სიაში</a>
+    <br>
+    <hr>
+    <a href="/courses/{{ course.pk }}/update/">✏️ რედაქტირება</a>
+    <br>
+    <hr>
+    <a href="/courses/{{ course.pk }}/delete/">🗑️ წაშლა</a>
+    <br>
+    <hr>
+    <a href="/courses/add/">+ კურსის დამატება</a>
+
 </body>
 </html>
